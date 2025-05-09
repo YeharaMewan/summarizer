@@ -1,4 +1,12 @@
 [
+    {
+    "CustomerID": "12345abcd",
+    "Date": "2025-04-25",
+    "FeedbackText": "Bad experience, the system is slow and the interface is not user-friendly.",
+    "Rating": 4.25,
+    "Product": "ERP Core",
+    "Category": "Usability"
+  },
   {
     "CustomerID": "12345abc",
     "Date": "2025-04-15",
@@ -11,7 +19,7 @@
     "CustomerID": "67890def",
     "Date": "2025-04-12",
     "FeedbackText": "The system is slow during peak hours. Difficult to configure without technical help.",
-    "Rating": 2,
+    "Rating": 2.35,
     "Product": "Finance Module",
     "Category": "Performance"
   },
@@ -19,7 +27,7 @@
     "CustomerID": "abcde123",
     "Date": "2025-04-10",
     "FeedbackText": "Customer support takes too long to respond. However, the reporting features are outstanding.",
-    "Rating": 3,
+    "Rating": 3.64,
     "Product": "Customer Relations",
     "Category": "Support"
   },
@@ -27,7 +35,7 @@
     "CustomerID": "fghij456",
     "Date": "2025-04-08",
     "FeedbackText": "Works as expected. Meets our basic needs but could be improved.",
-    "Rating": 3,
+    "Rating": 3.35,
     "Product": "Inventory Management",
     "Category": "Features"
   },
@@ -43,7 +51,7 @@
     "CustomerID": "pqrst012",
     "Date": "2025-04-03",
     "FeedbackText": "Too expensive for the features provided. Missing essential features for our industry.",
-    "Rating": 2,
+    "Rating": 2.89,
     "Product": "ERP Core",
     "Category": "Value"
   },
