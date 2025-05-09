@@ -6,16 +6,15 @@ import { Toaster, toast } from 'react-hot-toast'
 import Header from '../components/Header'
 import DateRangePicker from '../components/DateRangePicker'
 import FeedbackSummary from '../components/FeedbackSummary'
+import FeedbackDocument from '../components/FeedbackDocument'
 import FeedbackTable from '../components/FeedbackTable'
 import FeedbackDashboard from '../components/FeedbackDashboard'
 import Loading from '../components/Loading'
-import SkeletonLoader from '../components/SkeletonLoader'
 
 export default function Home() {
   const [feedbackData, setFeedbackData] = useState([])
   const [summaryData, setSummaryData] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [fetchingData, setFetchingData] = useState(true)
   const [dateRange, setDateRange] = useState({
     startDate: null,
     endDate: null
@@ -27,7 +26,6 @@ export default function Home() {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        setFetchingData(true)
         const response = await axios.get('http://localhost:5000/api/feedback')
         setFeedbackData(response.data)
         setError(null)
@@ -35,8 +33,6 @@ export default function Home() {
         console.error('Error fetching feedback data:', error)
         setError('Failed to load feedback data. Please check if the backend server is running.')
         toast.error('Failed to load feedback data')
-      } finally {
-        setFetchingData(false)
       }
     }
 
@@ -68,7 +64,7 @@ export default function Home() {
       toast.success('Feedback analysis complete!')
     } catch (error) {
       console.error('Error analyzing feedback:', error)
-      setError('Error analyzing feedback. Please try again or check if the Gemini API key is valid.')
+      setError('Error analyzing feedback. Please try again or check if the API key is valid.')
       toast.error('Failed to analyze feedback')
     } finally {
       setLoading(false)
@@ -81,8 +77,8 @@ export default function Home() {
       <Header />
       
       <div className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8 mt-8 transition-all duration-300 hover:shadow-lg">
-          <h2 className="text-xl font-semibold mb-4">Feedback Analysis Tool</h2>
+        <div className="bg-white rounded-xl shadow-lg p-6 mb-8 mt-8 border border-gray-100">
+          <h2 className="text-xl font-bold mb-6 text-gray-800">Feedback Analysis Tool</h2>
           
           <DateRangePicker 
             dateRange={dateRange} 
@@ -91,8 +87,8 @@ export default function Home() {
           
           <button
             onClick={generateSummary}
-            className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition duration-300 flex items-center transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed"
-            disabled={loading || fetchingData}
+            className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300 flex items-center hover:shadow-blue-300/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={loading}
           >
             {loading ? (
               <>
@@ -115,7 +111,7 @@ export default function Home() {
         </div>
 
         {error && (
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-8">
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-8 rounded-r-lg">
             <div className="flex">
               <div className="flex-shrink-0">
                 <svg className="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
@@ -134,45 +130,62 @@ export default function Home() {
         {loading && <Loading />}
         
         {summaryData && (
-          <div className="mb-8 animate-fadeIn">
+          <div className="mb-8">
             <div className="flex border-b border-gray-200 mb-6">
               <button
                 onClick={() => setActiveTab('summary')}
-                className={`py-2 px-4 font-medium text-sm mr-4 border-b-2 transition-all duration-300 ${
+                className={`py-3 px-6 font-medium text-sm mr-4 relative ${
                   activeTab === 'summary'
-                    ? 'text-blue-600 border-blue-600'
-                    : 'text-gray-500 hover:text-gray-700 border-transparent hover:border-gray-300'
+                    ? 'text-blue-600'
+                    : 'text-gray-500 hover:text-gray-700'
                 }`}
               >
                 AI Summary
+                {activeTab === 'summary' && (
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
+                )}
               </button>
               <button
                 onClick={() => setActiveTab('dashboard')}
-                className={`py-2 px-4 font-medium text-sm border-b-2 transition-all duration-300 ${
+                className={`py-3 px-6 font-medium text-sm mr-4 relative ${
                   activeTab === 'dashboard'
-                    ? 'text-blue-600 border-blue-600'
-                    : 'text-gray-500 hover:text-gray-700 border-transparent hover:border-gray-300'
+                    ? 'text-blue-600'
+                    : 'text-gray-500 hover:text-gray-700'
                 }`}
               >
                 Dashboard
+                {activeTab === 'dashboard' && (
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
+                )}
+              </button>
+              <button
+                onClick={() => setActiveTab('document')}
+                className={`py-3 px-6 font-medium text-sm relative ${
+                  activeTab === 'document'
+                    ? 'text-blue-600'
+                    : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                Detailed Report
+                {activeTab === 'document' && (
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
+                )}
               </button>
             </div>
             
             {activeTab === 'summary' ? (
               <FeedbackSummary summaryData={summaryData} />
-            ) : (
+            ) : activeTab === 'dashboard' ? (
               <FeedbackDashboard summaryData={summaryData} />
+            ) : (
+              <FeedbackDocument summaryData={summaryData} />
             )}
           </div>
         )}
         
         <div className="mt-8">
-          <h2 className="text-xl font-semibold mb-4">Recent Feedback</h2>
-          {fetchingData ? (
-            <SkeletonLoader />
-          ) : (
-            <FeedbackTable data={feedbackData.slice(0, 10)} />
-          )}
+          <h2 className="text-xl font-bold mb-6 text-gray-800">Recent Feedback</h2>
+          <FeedbackTable data={feedbackData.slice(0, 10)} />
         </div>
       </div>
     </main>
