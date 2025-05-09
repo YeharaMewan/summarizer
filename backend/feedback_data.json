@@ -1,0 +1,322 @@
+[
+  {
+    "CustomerID": "12345abc",
+    "Date": "2025-04-15",
+    "FeedbackText": "Great product, very satisfied! The interface is intuitive and easy to use.",
+    "Rating": 5,
+    "Product": "ERP Core",
+    "Category": "Usability"
+  },
+  {
+    "CustomerID": "67890def",
+    "Date": "2025-04-12",
+    "FeedbackText": "The system is slow during peak hours. Difficult to configure without technical help.",
+    "Rating": 2,
+    "Product": "Finance Module",
+    "Category": "Performance"
+  },
+  {
+    "CustomerID": "abcde123",
+    "Date": "2025-04-10",
+    "FeedbackText": "Customer support takes too long to respond. However, the reporting features are outstanding.",
+    "Rating": 3,
+    "Product": "Customer Relations",
+    "Category": "Support"
+  },
+  {
+    "CustomerID": "fghij456",
+    "Date": "2025-04-08",
+    "FeedbackText": "Works as expected. Meets our basic needs but could be improved.",
+    "Rating": 3,
+    "Product": "Inventory Management",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "klmno789",
+    "Date": "2025-04-05",
+    "FeedbackText": "Excellent customer service. The new features are exactly what we needed.",
+    "Rating": 5,
+    "Product": "HR Suite",
+    "Category": "Support"
+  },
+  {
+    "CustomerID": "pqrst012",
+    "Date": "2025-04-03",
+    "FeedbackText": "Too expensive for the features provided. Missing essential features for our industry.",
+    "Rating": 2,
+    "Product": "ERP Core",
+    "Category": "Value"
+  },
+  {
+    "CustomerID": "uvwxy345",
+    "Date": "2025-04-01",
+    "FeedbackText": "Fast delivery, exactly as described. This has significantly improved our workflow.",
+    "Rating": 5,
+    "Product": "Finance Module",
+    "Category": "Performance"
+  },
+  {
+    "CustomerID": "z12345ab",
+    "Date": "2025-03-30",
+    "FeedbackText": "Interface feels outdated. Documentation could be more comprehensive.",
+    "Rating": 2,
+    "Product": "Customer Relations",
+    "Category": "Usability"
+  },
+  {
+    "CustomerID": "c67890de",
+    "Date": "2025-03-27",
+    "FeedbackText": "Very responsive support team. Best ERP solution we've used.",
+    "Rating": 5,
+    "Product": "Inventory Management",
+    "Category": "Support"
+  },
+  {
+    "CustomerID": "fabcde12",
+    "Date": "2025-03-25",
+    "FeedbackText": "The learning curve is steeper than expected. Integration with our other systems is problematic.",
+    "Rating": 2,
+    "Product": "HR Suite",
+    "Category": "Usability"
+  },
+  {
+    "CustomerID": "g67890hi",
+    "Date": "2025-03-23",
+    "FeedbackText": "The mobile app version lacks many features from the desktop version. Very disappointing.",
+    "Rating": 1,
+    "Product": "ERP Core",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "jklmno12",
+    "Date": "2025-03-20",
+    "FeedbackText": "Stable performance even during high traffic periods. Could use more customization options.",
+    "Rating": 4,
+    "Product": "Finance Module",
+    "Category": "Performance"
+  },
+  {
+    "CustomerID": "pqr3456s",
+    "Date": "2025-03-18",
+    "FeedbackText": "The AI assistant feature is revolutionary! Worth every penny of the subscription.",
+    "Rating": 5,
+    "Product": "Customer Relations",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "tuv789wx",
+    "Date": "2025-03-16",
+    "FeedbackText": "Average product for the price point. Nothing stands out as exceptional.",
+    "Rating": 3,
+    "Product": "Inventory Management",
+    "Category": "Value"
+  },
+  {
+    "CustomerID": "yz12345a",
+    "Date": "2025-03-14",
+    "FeedbackText": "Training materials are insufficient. Had to hire external consultants to fully implement.",
+    "Rating": 2,
+    "Product": "HR Suite",
+    "Category": "Documentation"
+  },
+  {
+    "CustomerID": "bc6789de",
+    "Date": "2025-03-12",
+    "FeedbackText": "Impressive analytics capabilities. The dashboard is visually appealing and informative.",
+    "Rating": 5,
+    "Product": "ERP Core",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "fgh123ij",
+    "Date": "2025-03-10",
+    "FeedbackText": "Security features are robust but make simple tasks cumbersome. Need better balance.",
+    "Rating": 3,
+    "Product": "Finance Module",
+    "Category": "Security"
+  },
+  {
+    "CustomerID": "klm456no",
+    "Date": "2025-03-08",
+    "FeedbackText": "Absolutely terrible experience. Multiple bugs and crashes daily. Waste of money.",
+    "Rating": 1,
+    "Product": "Customer Relations",
+    "Category": "Reliability"
+  },
+  {
+    "CustomerID": "pqr789st",
+    "Date": "2025-03-06",
+    "FeedbackText": "Good value for money. The recent update fixed most of our previous issues.",
+    "Rating": 4,
+    "Product": "Inventory Management",
+    "Category": "Value"
+  },
+  {
+    "CustomerID": "uvw123xy",
+    "Date": "2025-03-04",
+    "FeedbackText": "API documentation is incomplete. Developer support is excellent though.",
+    "Rating": 3,
+    "Product": "HR Suite",
+    "Category": "Documentation"
+  },
+  {
+    "CustomerID": "z45678ab",
+    "Date": "2025-03-02",
+    "FeedbackText": "Perfect fit for our small business. Easy deployment and minimal maintenance required.",
+    "Rating": 5,
+    "Product": "ERP Core",
+    "Category": "Usability"
+  },
+  {
+    "CustomerID": "cde901fg",
+    "Date": "2025-02-28",
+    "FeedbackText": "Automation features have reduced our manual workload by 70%. Highly recommended.",
+    "Rating": 5,
+    "Product": "Finance Module",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "hij234kl",
+    "Date": "2025-02-26",
+    "FeedbackText": "Regular outages during critical business hours. Seriously considering alternatives.",
+    "Rating": 1,
+    "Product": "Customer Relations",
+    "Category": "Reliability"
+  },
+  {
+    "CustomerID": "mno567pq",
+    "Date": "2025-02-24",
+    "FeedbackText": "User interface needs modernization. Functionality is good but looks outdated.",
+    "Rating": 3,
+    "Product": "Inventory Management",
+    "Category": "Usability"
+  },
+  {
+    "CustomerID": "rst890uv",
+    "Date": "2025-02-22",
+    "FeedbackText": "Exceptional value. Has transformed our HR processes completely.",
+    "Rating": 5,
+    "Product": "HR Suite",
+    "Category": "Value"
+  },
+  {
+    "CustomerID": "wxy123za",
+    "Date": "2025-02-20",
+    "FeedbackText": "Customer service is responsive but unable to resolve complex issues. Need better trained staff.",
+    "Rating": 2,
+    "Product": "ERP Core",
+    "Category": "Support"
+  },
+  {
+    "CustomerID": "bcd456ef",
+    "Date": "2025-02-18",
+    "FeedbackText": "The reporting module is difficult to use but generates comprehensive reports once configured.",
+    "Rating": 3,
+    "Product": "Finance Module",
+    "Category": "Usability"
+  },
+  {
+    "CustomerID": "ghi789jk",
+    "Date": "2025-02-16",
+    "FeedbackText": "Fantastic product! Meets all our requirements and exceeds expectations.",
+    "Rating": 5,
+    "Product": "Customer Relations",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "lmn012op",
+    "Date": "2025-02-14",
+    "FeedbackText": "Poor compatibility with our existing systems. Integration was more difficult than advertised.",
+    "Rating": 2,
+    "Product": "Inventory Management",
+    "Category": "Integration"
+  },
+  {
+    "CustomerID": "qrs345tu",
+    "Date": "2025-02-12",
+    "FeedbackText": "Adequate performance for our needs. Nothing exceptional but gets the job done.",
+    "Rating": 3,
+    "Product": "HR Suite",
+    "Category": "Performance"
+  },
+  {
+    "CustomerID": "vwx678yz",
+    "Date": "2025-02-10",
+    "FeedbackText": "Subscription model is expensive long-term. Would prefer a one-time purchase option.",
+    "Rating": 2,
+    "Product": "ERP Core",
+    "Category": "Value"
+  },
+  {
+    "CustomerID": "abc901de",
+    "Date": "2025-02-08",
+    "FeedbackText": "Amazing customer service experience. They went above and beyond to solve our issue.",
+    "Rating": 5,
+    "Product": "Finance Module",
+    "Category": "Support"
+  },
+  {
+    "CustomerID": "fgh234ij",
+    "Date": "2025-02-06",
+    "FeedbackText": "Data visualization tools are impressive. Makes complex information easy to understand.",
+    "Rating": 4,
+    "Product": "Customer Relations",
+    "Category": "Features"
+  },
+  {
+    "CustomerID": "klm567no",
+    "Date": "2025-02-04",
+    "FeedbackText": "Frequent updates with meaningful improvements. Developers listen to feedback.",
+    "Rating": 4,
+    "Product": "Inventory Management",
+    "Category": "Updates"
+  },
+  {
+    "CustomerID": "pqr890st",
+    "Date": "2025-02-02",
+    "FeedbackText": "Terrible documentation. Had to figure out most features through trial and error.",
+    "Rating": 1,
+    "Product": "HR Suite",
+    "Category": "Documentation"
+  },
+  {
+    "CustomerID": "uvw123xy",
+    "Date": "2025-01-31",
+    "FeedbackText": "Powerful customization options. Perfect for our unique business model.",
+    "Rating": 5,
+    "Product": "ERP Core",
+    "Category": "Customization"
+  },
+  {
+    "CustomerID": "zab456cd",
+    "Date": "2025-01-29",
+    "FeedbackText": "Mediocre performance. Expected better for the price point.",
+    "Rating": 2,
+    "Product": "Finance Module",
+    "Category": "Performance"
+  },
+  {
+    "CustomerID": "efg789hi",
+    "Date": "2025-01-27",
+    "FeedbackText": "Cloud synchronization features work flawlessly. Great for our distributed team.",
+    "Rating": 5,
+    "Product": "Customer Relations",
+    "Category": "Technology"
+  },
+  {
+    "CustomerID": "jkl012mn",
+    "Date": "2025-01-25",
+    "FeedbackText": "User interface is intuitive but lacks accessibility features for visually impaired users.",
+    "Rating": 3,
+    "Product": "Inventory Management",
+    "Category": "Accessibility"
+  },
+  {
+    "CustomerID": "opq345rs",
+    "Date": "2025-01-23",
+    "FeedbackText": "Excellent onboarding process. Our team was productive within days of implementation.",
+    "Rating": 5,
+    "Product": "HR Suite",
+    "Category": "Training"
+  }
+]
